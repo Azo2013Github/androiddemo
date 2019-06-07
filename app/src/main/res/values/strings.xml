@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">practica3</string>
+    <string name="mainImageDescription">pajaro</string>
+    <string name="Classic_Pajaro">Pajaro</string>
+    <string name="butonZ">Me gusta</string>
+    <string name="butttonReight">No me Gusta</string>
+</resources>
