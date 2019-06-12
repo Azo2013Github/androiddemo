@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layoutWidth">102dp</dimen>
+    <dimen name="marginTop">26dp</dimen>
+    <dimen name="padding">1dp</dimen>
+</resources>

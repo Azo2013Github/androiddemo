@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:layout_marginTop="@dimen/marginTop"
     tools:context=".MainActivity">
 
 
@@ -16,45 +18,46 @@
         android:text="TextView"
         android:textSize="24sp"
         android:typeface="normal"
-        android:background="@color/indigo"
         android:verticalScrollbarPosition="defaultPosition" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/padding">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/idButtonCE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonCE"
-            android:background="@color/GreenYellow"/>
+            android:onClick="buttonPulsado"
+            android:text="@string/buttonCE" />
 
         <Button
-            android:id="@+id/idButton2"
+            android:id="@+id/idButtonPorcentaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/porcentaje"
-            />
+            android:onClick="buttonPulsado"
+            android:text="@string/porcentaje" />
 
         <Button
-            android:id="@+id/idButton3"
+            android:id="@+id/idButtonMas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonMas"
-            />
+            android:onClick="buttonPulsado"
+            android:text="@string/buttonMas" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/idButtonMenos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/buttonMenos"
-            />
+            android:onClick="buttonPulsado"
+            android:text="@string/buttonMenos" />
 
     </LinearLayout>
 
@@ -62,35 +65,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/padding">
 
         <Button
-            android:id="@+id/idButton4"
+            android:id="@+id/idButton7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/button7"
-            />
+            android:onClick="buttonPulsado"
+            android:text="@string/button7" />
 
         <Button
-            android:id="@+id/idButton5"
+            android:id="@+id/idButton8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/buton8" />
 
         <Button
-            android:id="@+id/idButton6"
+            android:id="@+id/idButton9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/buton9" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/idButtonDividir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/dividir" />
 
     </LinearLayout>
@@ -99,34 +107,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/padding">
 
         <Button
-            android:id="@+id/idButton7"
+            android:id="@+id/idButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/button4" />
 
         <Button
-            android:id="@+id/idButton8"
+            android:id="@+id/idButton5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/button5" />
 
         <Button
-            android:id="@+id/idButton9"
+            android:id="@+id/idButton6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/button6" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/idButtonPor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             tools:text="@string/por" />
 
     </LinearLayout>
@@ -135,56 +149,66 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/padding">
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/idButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/button1" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/idButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/button2" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/idButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/button3" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/idButtonIgual"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/igual"
-            android:background="@color/crimson"/>
+            android:background="@color/crimson"
+            android:onClick="buttonPulsado"
+            android:text="@string/igual" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/padding">
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/idButtonZero"
             android:layout_width="219dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/zero" />
 
         <Button
-            android:id="@+id/button19"
+            android:id="@+id/idButtonPunto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="buttonPulsado"
             android:text="@string/punto" />
     </LinearLayout>
 
